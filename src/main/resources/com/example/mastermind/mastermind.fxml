@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="padre" alignment="CENTER" prefHeight="545.0" prefWidth="339.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mastermind.ControladorMastermind">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="327.0" text="MASTER-MIND">
+      <font>
+         <Font name="Colonna MT" size="43.0" />
+      </font></Label>
+   <VBox prefHeight="300.0" prefWidth="243.0">
+      <children>
+         <HBox fx:id="fila1" alignment="CENTER" prefHeight="46.0" prefWidth="226.0">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <children>
+               <Circle fx:id="b11" fill="WHITE" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b12" fill="WHITE" layoutX="28.0" layoutY="28.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b13" fill="WHITE" layoutX="64.0" layoutY="28.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b14" fill="WHITE" layoutX="100.0" layoutY="28.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b15" fill="WHITE" layoutX="136.0" layoutY="28.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+            </children>
+         </HBox>
+         <HBox fx:id="fila2" alignment="CENTER" layoutX="15.0" layoutY="15.0" prefHeight="100.0" prefWidth="200.0">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <children>
+               <Circle fx:id="b21" fill="WHITE" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b22" fill="WHITE" layoutX="137.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b23" fill="WHITE" layoutX="155.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b24" fill="WHITE" layoutX="173.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b25" fill="WHITE" layoutX="191.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+            </children>
+         </HBox>
+         <HBox fx:id="fila3" alignment="CENTER" layoutX="10.0" layoutY="120.0" prefHeight="100.0" prefWidth="200.0">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <children>
+               <Circle fx:id="b31" fill="WHITE" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b32" fill="WHITE" layoutX="137.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b33" fill="WHITE" layoutX="155.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b34" fill="WHITE" layoutX="173.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b35" fill="WHITE" layoutX="191.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+            </children>
+         </HBox>
+         <HBox fx:id="fila4" alignment="CENTER" layoutX="10.0" layoutY="213.0" prefHeight="100.0" prefWidth="200.0">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <children>
+               <Circle fx:id="b41" fill="WHITE" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b42" fill="WHITE" layoutX="137.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b43" fill="WHITE" layoutX="155.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b44" fill="WHITE" layoutX="173.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b45" fill="WHITE" layoutX="191.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+            </children>
+         </HBox>
+         <HBox fx:id="fila5" alignment="CENTER" layoutX="10.0" layoutY="237.0" prefHeight="100.0" prefWidth="200.0">
+            <VBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </VBox.margin>
+            <children>
+               <Circle fx:id="b51" fill="WHITE" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b52" fill="WHITE" layoutX="155.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b53" fill="WHITE" layoutX="173.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b54" fill="WHITE" layoutX="191.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+               <Circle fx:id="b55" fill="WHITE" layoutX="209.0" layoutY="36.0" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+                  <HBox.margin>
+                     <Insets bottom="5.0" left="7.0" right="7.0" top="5.0" />
+                  </HBox.margin>
+               </Circle>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Circle fx:id="i0" accessibleRole="BUTTON" fill="BLUE" onMouseClicked="#ponerColor" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+         </Circle>
+         <Circle fx:id="i1" accessibleRole="BUTTON" fill="RED" layoutX="160.0" layoutY="52.0" onMouseClicked="#ponerColor" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+         </Circle>
+         <Circle fx:id="i2" accessibleRole="BUTTON" fill="GREEN" layoutX="178.0" layoutY="52.0" onMouseClicked="#ponerColor" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+         </Circle>
+         <Circle fx:id="i3" accessibleRole="BUTTON" fill="YELLOW" layoutX="196.0" layoutY="52.0" onMouseClicked="#ponerColor" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+         </Circle>
+         <Circle fx:id="i4" accessibleRole="BUTTON" fill="VIOLET" layoutX="214.0" layoutY="52.0" onMouseClicked="#ponerColor" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+         </Circle>
+         <Circle fx:id="i5" accessibleRole="BUTTON" fill="BROWN" layoutX="232.0" layoutY="52.0" onMouseClicked="#ponerColor" radius="18.0" stroke="BLACK" strokeType="INSIDE">
+            <HBox.margin>
+               <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+            </HBox.margin>
+         </Circle>
+      </children>
+   </HBox>
+   <HBox alignment="CENTER" prefHeight="121.0" prefWidth="290.0">
+      <children>
+          <Button alignment="CENTER" contentDisplay="CENTER" onAction="#comprobar" prefHeight="70.0" prefWidth="82.0" text="SUBMIT" textAlignment="CENTER">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+   </HBox>
+</VBox>

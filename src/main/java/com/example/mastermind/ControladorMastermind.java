@@ -16,41 +16,21 @@ import java.net.URL;
 import java.util.*;
 
 public class ControladorMastermind implements Initializable {
-
     List<Integer> combinacion; // guarda la combinación
-    int intento =1;
-    List<Integer> listaIntento = new ArrayList<>();
-
-    private String[] colores;
-
-    private int contador = 0;
-
-    HBox h;
+    int intento =1; // el intento en el que se encuentra el jugador que irá aumentando cada vez que pulse en SUBMIT
+    List<Integer> listaIntento = new ArrayList<>(); // almacena el intento que realiza el jugador
+    private String[] colores; // almacena la lista de los colores que hay
+    private int contador = 0; // contador que nos ayuda a cambiar el circulo en el que se pone el color a medida que se escoge
+    HBox h; // hbox en el que se almacena la fila del intento en el que se encuentra el jugador
 
     @FXML
-    private VBox padre;
-
+    private VBox padre; // vbox raiz del que sacaremos cada una de las filas
     @FXML
     private HBox fila1,fila2,fila3,fila4,fila5;
+    @FXML
+    private Circle i0,i1,i2,i3,i4,i5; // cada uno de los círculos que
 
-    @FXML
-    private Circle i0;
-
-    @FXML
-    private Circle i2;
-
-    @FXML
-    private Circle i1;
-
-    @FXML
-    private Circle i3;
-
-    @FXML
-    private Circle i4;
-    @FXML
-    private Circle i5;
-
-    @FXML
+    @FXML  //Método que inserta el color que pulsa el jugador
     void ponerColor(MouseEvent event) {
         Node source = (Node) event.getSource();
         String nombre= source.getId();
@@ -72,7 +52,7 @@ public class ControladorMastermind implements Initializable {
         }
     }
 
-    @FXML
+    @FXML  //Método que inicia la comprobación de la combinación cuando el jugador pulsa en SUBMIT
     void comprobar(ActionEvent event) {
 
         if(!comparar()){
@@ -93,6 +73,7 @@ public class ControladorMastermind implements Initializable {
 
     }
 
+    //Método que compara la combinación del jugador con la combinación ganadora
     Boolean comparar(){
         int iguales = 0;
         int pos = 0;
@@ -123,6 +104,7 @@ public class ControladorMastermind implements Initializable {
         }
     }
 
+    //Método que redibuja de blanco los círculos incorrectos y mantiene los que están correctos
     void redibujar(){
         int pos = 0;
         HBox h = (HBox) padre.lookup("#fila"+intento);
@@ -135,6 +117,7 @@ public class ControladorMastermind implements Initializable {
         }
     }
 
+    //Método que crea una combinación de colores aleatoria que será la combinación ganadora
     public void crearCombinacion() {
         Random aleatorio = new Random(System.currentTimeMillis());
         int contador = 0;
@@ -148,6 +131,7 @@ public class ControladorMastermind implements Initializable {
         System.out.println(combinacion);
     }
 
+    //Método que resetea todos los valores para poder empezar a jugar de 0.
     public void empezarPartida(){
         intento = 1;
         contador = 0;
